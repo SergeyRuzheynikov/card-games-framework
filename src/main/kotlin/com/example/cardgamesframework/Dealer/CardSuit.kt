@@ -1,6 +1,5 @@
 package com.example.cardgamesframework.Dealer
-
-enum class CardSuit(ss:Char,suit: String) : ICardSuit{
+enum class CardSuit(val ss:Char,val suit: String) : ICardSuit{
     spades('s',"spades"),
     clubs('c',"clubs"),
     diamonds('d',"diamonds"),

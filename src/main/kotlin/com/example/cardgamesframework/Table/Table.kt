@@ -2,7 +2,7 @@ package com.example.cardgamesframework.Table
 
 import com.example.cardgamesframework.Dealer.IDealer
 
-class Table(
+open class Table(
     var countSeats: UInt,
     override val dealer: IDealer,
     override val seats: Map<UInt, IPlayer>

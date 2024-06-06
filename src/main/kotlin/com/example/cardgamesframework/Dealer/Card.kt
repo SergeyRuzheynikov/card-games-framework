@@ -1,7 +1,8 @@
 package com.example.cardgamesframework.Dealer
 
-class Card(val cardValue: CardValue,
-           val cardSuit: CardSuit) {
+class Card<T, U>(val cardValue: CardValue,
+                 val cardSuit: CardSuit
+) {
 
 
 }

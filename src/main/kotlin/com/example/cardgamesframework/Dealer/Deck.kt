@@ -1,25 +1,18 @@
 package com.example.cardgamesframework.Dealer
 
-class Deck() : ArrayList<Card<CardValue,CardSuit>>(52), IDeck{
-    override fun shuffleMe() {
-        TODO("Not yet implemented")
+class Deck():ArrayList<Card<CardValue, CardSuit>>(), IDeck {
+     override fun shuffleMe(){
+        shuffle()
+
     }
 
-    override fun contains(element: Map<ICardValue, ICardSuit>): Boolean {
-        TODO("Not yet implemented")
+    override fun printMe(){
+        this.forEach {
+            println(it.cardValue.vl+""+it.cardSuit.ss)
+        }
+
     }
-
-    override fun containsAll(elements: Collection<Map<ICardValue, ICardSuit>>): Boolean {
-        TODO("Not yet implemented")
+    fun addCards(newCards: ArrayList<Card<CardValue,CardSuit>>) {
+        addAll(newCards)
     }
-
-    override fun indexOf(element: Map<ICardValue, ICardSuit>): Int {
-        TODO("Not yet implemented")
-    }
-
-    override fun lastIndexOf(element: Map<ICardValue, ICardSuit>): Int {
-        TODO("Not yet implemented")
-    }
-
-
 }

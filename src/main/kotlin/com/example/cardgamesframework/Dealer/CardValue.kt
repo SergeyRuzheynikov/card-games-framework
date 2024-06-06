@@ -1,7 +1,6 @@
 package com.example.cardgamesframework.Dealer
-
-enum class CardValue(vl: Char, value: String): ICardValue {
-    Ace('A', "Ace"),
+enum class CardValue(val vl: Char, var value: String): ICardValue {
+    Ace('A', "Ace" ),
     King('K', "King"),
     Queen('Q', "Queen"),
     Jack('J', "Jack"),
